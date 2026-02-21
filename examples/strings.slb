@@ -1,0 +1,25 @@
+# String operations
+let s = "Hello, World!"
+println("Original: " ++ s)
+println("Length: " ++ string_of(length(s)))
+println("Upper: " ++ uppercase(s))
+println("Lower: " ++ lowercase(s))
+println("Reversed: " ++ reverse(s))
+println("Substr: " ++ substr(s, 0, 5))
+println("Trimmed: '" ++ trim("  hello  ") ++ "'")
+println("Replaced: " ++ replace(s, "World", "Buoy"))
+
+let parts = split(",", "a,b,c,d")
+println("Split count: " ++ string_of(length(parts)))
+println("Joined: " ++ join(" - ", parts))
+
+# Regex
+let text = "The year is 2024 and the day is 21"
+if text =~ /\d+/ do
+  println("Found a number!")
+end
+
+let email = "user@example.com"
+if email =~ /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]+$/ do
+  println("Valid email: " ++ email)
+end

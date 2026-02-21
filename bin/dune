@@ -1,0 +1,3 @@
+(executable
+ (name buoy)
+ (libraries buoy_lib))

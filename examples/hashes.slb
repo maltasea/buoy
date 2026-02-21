@@ -1,0 +1,19 @@
+# Hash operations
+let colors = {"apple": "red", "banana": "yellow", "grape": "purple"}
+println("Apple is: " ++ colors["apple"])
+
+colors["cherry"] = "red"
+println("Added cherry")
+
+let k = keys(colors)
+println("Keys count: " ++ string_of(length(k)))
+
+let v = values(colors)
+println("Values count: " ++ string_of(length(v)))
+
+if exists(colors["banana"]) do
+  println("banana exists")
+end
+
+delete(colors["grape"])
+println("After delete, keys: " ++ string_of(length(keys(colors))))

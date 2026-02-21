@@ -1,0 +1,14 @@
+# Hello World
+let name = "World"
+println("Hello, " ++ name ++ "!")
+
+let x = 10
+let y = 3
+println("Sum: " ++ string_of(x + y))
+println("Product: " ++ string_of(x * y))
+
+if x > y do
+  println("x is greater")
+else do
+  println("y is greater")
+end

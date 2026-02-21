@@ -1,0 +1,9 @@
+(library
+ (name buoy_lib)
+ (libraries str))
+
+(menhir
+ (modules parser)
+ (flags --explain))
+
+(ocamllex lexer)

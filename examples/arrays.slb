@@ -1,0 +1,41 @@
+# Array operations
+let items = [5, 3, 1, 4, 2]
+println("Items: " ++ join(", ", items))
+println("Length: " ++ string_of(length(items)))
+
+push(items, 6)
+println("After push: " ++ join(", ", items))
+
+let last = pop(items)
+println("Popped: " ++ string_of(last))
+
+let first = shift(items)
+println("Shifted: " ++ string_of(first))
+
+let sorted = sort(items)
+println("Sorted: " ++ join(", ", sorted))
+
+let reversed = reverse(items)
+println("Reversed: " ++ join(", ", reversed))
+
+let doubled = map(items, fn(x) { x * 2 })
+println("Doubled: " ++ join(", ", doubled))
+
+let evens = filter(items, fn(x) { x % 2 == 0 })
+println("Evens: " ++ join(", ", evens))
+
+let nums = [1, 2, 2, 3, 3, 3]
+let uniq = unique(nums)
+println("Unique: " ++ join(", ", uniq))
+
+# Iteration
+print("Each: ")
+each(items, fn(x) { print(string_of(x) ++ " ") })
+println("")
+
+# For loop
+print("For: ")
+for item in items do
+  print(string_of(item) ++ " ")
+end
+println("")
